@@ -12,6 +12,7 @@
 @interface Card()
 @end
 
+
 @implementation Card
 
 // Property contents has an instance variable called _contents
