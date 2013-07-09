@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Card.h"
 
-@interface NumberCard : NSObject
+@interface NumberCard : Card
+
+@property (nonatomic,) NSUInteger rank;
+
+// "+" means class method
++ (NSUInteger)maxRank;
 
 @end
