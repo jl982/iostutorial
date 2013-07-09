@@ -49,9 +49,11 @@
 	if (self.cards.count)
 	{
 		unsigned index = arc4random() % self.cards.count;
-		// Prior to iOS 6, have to send a message, i.e.
-		// randomCard = [self.cards objectAtIndex:index]
-		randomCard = self.cards[index];
+        
+        // Since iOS 6, can do
+        // randomCard = self.cards[index];
+        randomCard = [self.cards objectAtIndex:index];
+
 		[self.cards removeObjectAtIndex:index];
 	}
     
