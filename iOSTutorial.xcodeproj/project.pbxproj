@@ -19,6 +19,7 @@
 		258859C4178BAFEC004BA602 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 258859C2178BAFEC004BA602 /* MainStoryboard_iPhone.storyboard */; };
 		258859C7178BAFEC004BA602 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 258859C5178BAFEC004BA602 /* MainStoryboard_iPad.storyboard */; };
 		258859CA178BAFEC004BA602 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 258859C9178BAFEC004BA602 /* ViewController.m */; };
+		258859D2178BBE98004BA602 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 258859D1178BBE98004BA602 /* Card.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		258859C6178BAFEC004BA602 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		258859C8178BAFEC004BA602 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		258859C9178BAFEC004BA602 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		258859D0178BBE98004BA602 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
+		258859D1178BBE98004BA602 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 		258859B0178BAFEB004BA602 /* iOSTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				258859D3178BC117004BA602 /* Model */,
 				258859B9178BAFEB004BA602 /* AppDelegate.h */,
 				258859BA178BAFEB004BA602 /* AppDelegate.m */,
 				258859C2178BAFEC004BA602 /* MainStoryboard_iPhone.storyboard */,
@@ -108,6 +112,15 @@
 				258859C0178BAFEC004BA602 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		258859D3178BC117004BA602 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				258859D0178BBE98004BA602 /* Card.h */,
+				258859D1178BBE98004BA602 /* Card.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +193,7 @@
 				258859B7178BAFEB004BA602 /* main.m in Sources */,
 				258859BB178BAFEB004BA602 /* AppDelegate.m in Sources */,
 				258859CA178BAFEC004BA602 /* ViewController.m in Sources */,
+				258859D2178BBE98004BA602 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
