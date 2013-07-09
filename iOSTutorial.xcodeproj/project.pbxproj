@@ -20,6 +20,7 @@
 		258859C7178BAFEC004BA602 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 258859C5178BAFEC004BA602 /* MainStoryboard_iPad.storyboard */; };
 		258859CA178BAFEC004BA602 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 258859C9178BAFEC004BA602 /* ViewController.m */; };
 		258859D2178BBE98004BA602 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 258859D1178BBE98004BA602 /* Card.m */; };
+		258859D6178BC426004BA602 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 258859D5178BC426004BA602 /* Deck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		258859C9178BAFEC004BA602 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		258859D0178BBE98004BA602 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
 		258859D1178BBE98004BA602 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
+		258859D4178BC426004BA602 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
+		258859D5178BC426004BA602 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Model/Deck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 			children = (
 				258859D0178BBE98004BA602 /* Card.h */,
 				258859D1178BBE98004BA602 /* Card.m */,
+				258859D4178BC426004BA602 /* Deck.h */,
+				258859D5178BC426004BA602 /* Deck.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 				258859BB178BAFEB004BA602 /* AppDelegate.m in Sources */,
 				258859CA178BAFEC004BA602 /* ViewController.m in Sources */,
 				258859D2178BBE98004BA602 /* Card.m in Sources */,
+				258859D6178BC426004BA602 /* Deck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
