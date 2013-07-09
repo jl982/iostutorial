@@ -22,6 +22,7 @@
 		258859D2178BBE98004BA602 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 258859D1178BBE98004BA602 /* Card.m */; };
 		258859D6178BC426004BA602 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 258859D5178BC426004BA602 /* Deck.m */; };
 		258859D9178BCAD3004BA602 /* NumberCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 258859D8178BCAD3004BA602 /* NumberCard.m */; };
+		258859DC178BD44A004BA602 /* NumberCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 258859DB178BD449004BA602 /* NumberCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		258859D5178BC426004BA602 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Model/Deck.m; sourceTree = "<group>"; };
 		258859D7178BCAD3004BA602 /* NumberCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NumberCard.h; path = Model/NumberCard.h; sourceTree = "<group>"; };
 		258859D8178BCAD3004BA602 /* NumberCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NumberCard.m; path = Model/NumberCard.m; sourceTree = "<group>"; };
+		258859DA178BD448004BA602 /* NumberCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NumberCardDeck.h; path = Model/NumberCardDeck.h; sourceTree = "<group>"; };
+		258859DB178BD449004BA602 /* NumberCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NumberCardDeck.m; path = Model/NumberCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 				258859D5178BC426004BA602 /* Deck.m */,
 				258859D7178BCAD3004BA602 /* NumberCard.h */,
 				258859D8178BCAD3004BA602 /* NumberCard.m */,
+				258859DA178BD448004BA602 /* NumberCardDeck.h */,
+				258859DB178BD449004BA602 /* NumberCardDeck.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 				258859D2178BBE98004BA602 /* Card.m in Sources */,
 				258859D6178BC426004BA602 /* Deck.m in Sources */,
 				258859D9178BCAD3004BA602 /* NumberCard.m in Sources */,
+				258859DC178BD44A004BA602 /* NumberCardDeck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
