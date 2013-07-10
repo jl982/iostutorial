@@ -7,6 +7,7 @@
 //
 
 #import "RecipeViewController.h"
+#import "RecipeDetailViewController.h"
 
 @interface RecipeViewController ()
 
@@ -53,10 +54,22 @@
     return cell;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        RecipeDetailViewController *destViewController = segue.destinationViewController;
+        destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload {
+    [self setTableView:nil];
+    [super viewDidUnload];
+}
 @end

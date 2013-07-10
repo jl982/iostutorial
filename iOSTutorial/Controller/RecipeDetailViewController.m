@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    self.recipeLabel.text = self.recipeName;
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,4 +37,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload {
+    [self setRecipeLabel:nil];
+    [super viewDidUnload];
+}
 @end
