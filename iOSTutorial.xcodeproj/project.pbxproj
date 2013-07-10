@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25097E91178D2B3C0034EE3A /* RecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25097E90178D2B3C0034EE3A /* RecipeDetailViewController.m */; };
 		256289DD178D22520012ECA4 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 256289DC178D22520012ECA4 /* CardViewController.m */; };
 		256289E0178D230F0012ECA4 /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 256289DF178D230F0012ECA4 /* RecipeViewController.m */; };
 		258859AB178BAFEB004BA602 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258859AA178BAFEB004BA602 /* UIKit.framework */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25097E8F178D2B3C0034EE3A /* RecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDetailViewController.h; sourceTree = "<group>"; };
+		25097E90178D2B3C0034EE3A /* RecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailViewController.m; sourceTree = "<group>"; };
 		256289DB178D22520012ECA4 /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
 		256289DC178D22520012ECA4 /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
 		256289DE178D230F0012ECA4 /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
@@ -77,6 +80,8 @@
 				256289DC178D22520012ECA4 /* CardViewController.m */,
 				256289DE178D230F0012ECA4 /* RecipeViewController.h */,
 				256289DF178D230F0012ECA4 /* RecipeViewController.m */,
+				25097E8F178D2B3C0034EE3A /* RecipeDetailViewController.h */,
+				25097E90178D2B3C0034EE3A /* RecipeDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 				258859DC178BD44A004BA602 /* NumberCardDeck.m in Sources */,
 				256289DD178D22520012ECA4 /* CardViewController.m in Sources */,
 				256289E0178D230F0012ECA4 /* RecipeViewController.m in Sources */,
+				25097E91178D2B3C0034EE3A /* RecipeDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
