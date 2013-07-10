@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 Jianneng Li. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CardViewController.h"
 #import "NumberCardDeck.h"
 
-@interface ViewController ()
+@interface CardViewController ()
 @property (nonatomic) int flipCount;
 @property (strong, nonatomic) NumberCardDeck *deck;
 
@@ -17,7 +17,7 @@
 @end
 
 
-@implementation ViewController
+@implementation CardViewController
 
 - (NumberCardDeck *)deck
 {
