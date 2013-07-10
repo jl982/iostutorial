@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		256289DD178D22520012ECA4 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 256289DC178D22520012ECA4 /* CardViewController.m */; };
+		256289E0178D230F0012ECA4 /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 256289DF178D230F0012ECA4 /* RecipeViewController.m */; };
 		258859AB178BAFEB004BA602 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258859AA178BAFEB004BA602 /* UIKit.framework */; };
 		258859AD178BAFEB004BA602 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258859AC178BAFEB004BA602 /* Foundation.framework */; };
 		258859AF178BAFEB004BA602 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258859AE178BAFEB004BA602 /* CoreGraphics.framework */; };
@@ -28,6 +29,8 @@
 /* Begin PBXFileReference section */
 		256289DB178D22520012ECA4 /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
 		256289DC178D22520012ECA4 /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
+		256289DE178D230F0012ECA4 /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
+		256289DF178D230F0012ECA4 /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
 		258859A7178BAFEB004BA602 /* iOSTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		258859AA178BAFEB004BA602 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		258859AC178BAFEB004BA602 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -72,6 +75,8 @@
 			children = (
 				256289DB178D22520012ECA4 /* CardViewController.h */,
 				256289DC178D22520012ECA4 /* CardViewController.m */,
+				256289DE178D230F0012ECA4 /* RecipeViewController.h */,
+				256289DF178D230F0012ECA4 /* RecipeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				258859D9178BCAD3004BA602 /* NumberCard.m in Sources */,
 				258859DC178BD44A004BA602 /* NumberCardDeck.m in Sources */,
 				256289DD178D22520012ECA4 /* CardViewController.m in Sources */,
+				256289E0178D230F0012ECA4 /* RecipeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
