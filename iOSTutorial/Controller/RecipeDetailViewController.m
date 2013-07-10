@@ -28,6 +28,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    // Set label to recipe name
     self.recipeLabel.text = self.recipeName;
 }
 
