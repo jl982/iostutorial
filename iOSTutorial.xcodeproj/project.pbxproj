@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		256289DD178D22520012ECA4 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 256289DC178D22520012ECA4 /* CardViewController.m */; };
 		258859AB178BAFEB004BA602 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258859AA178BAFEB004BA602 /* UIKit.framework */; };
 		258859AD178BAFEB004BA602 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258859AC178BAFEB004BA602 /* Foundation.framework */; };
 		258859AF178BAFEB004BA602 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258859AE178BAFEB004BA602 /* CoreGraphics.framework */; };
@@ -18,7 +19,6 @@
 		258859C1178BAFEC004BA602 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 258859C0178BAFEC004BA602 /* Default-568h@2x.png */; };
 		258859C4178BAFEC004BA602 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 258859C2178BAFEC004BA602 /* MainStoryboard_iPhone.storyboard */; };
 		258859C7178BAFEC004BA602 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 258859C5178BAFEC004BA602 /* MainStoryboard_iPad.storyboard */; };
-		258859CA178BAFEC004BA602 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 258859C9178BAFEC004BA602 /* CardViewController.m */; };
 		258859D2178BBE98004BA602 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 258859D1178BBE98004BA602 /* Card.m */; };
 		258859D6178BC426004BA602 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 258859D5178BC426004BA602 /* Deck.m */; };
 		258859D9178BCAD3004BA602 /* NumberCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 258859D8178BCAD3004BA602 /* NumberCard.m */; };
@@ -26,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		256289DB178D22520012ECA4 /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
+		256289DC178D22520012ECA4 /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
 		258859A7178BAFEB004BA602 /* iOSTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		258859AA178BAFEB004BA602 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		258859AC178BAFEB004BA602 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -41,8 +43,6 @@
 		258859C0178BAFEC004BA602 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		258859C3178BAFEC004BA602 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		258859C6178BAFEC004BA602 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		258859C8178BAFEC004BA602 /* CardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
-		258859C9178BAFEC004BA602 /* CardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
 		258859D0178BBE98004BA602 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
 		258859D1178BBE98004BA602 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
 		258859D4178BC426004BA602 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
@@ -67,6 +67,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		256289DA178D22520012ECA4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				256289DB178D22520012ECA4 /* CardViewController.h */,
+				256289DC178D22520012ECA4 /* CardViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2588599E178BAFEB004BA602 = {
 			isa = PBXGroup;
 			children = (
@@ -97,13 +106,12 @@
 		258859B0178BAFEB004BA602 /* iOSTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				256289DA178D22520012ECA4 /* Controller */,
 				258859D3178BC117004BA602 /* Model */,
 				258859B9178BAFEB004BA602 /* AppDelegate.h */,
 				258859BA178BAFEB004BA602 /* AppDelegate.m */,
 				258859C2178BAFEC004BA602 /* MainStoryboard_iPhone.storyboard */,
 				258859C5178BAFEC004BA602 /* MainStoryboard_iPad.storyboard */,
-				258859C8178BAFEC004BA602 /* CardViewController.h */,
-				258859C9178BAFEC004BA602 /* CardViewController.m */,
 				258859B1178BAFEB004BA602 /* Supporting Files */,
 			);
 			path = iOSTutorial;
@@ -207,11 +215,11 @@
 			files = (
 				258859B7178BAFEB004BA602 /* main.m in Sources */,
 				258859BB178BAFEB004BA602 /* AppDelegate.m in Sources */,
-				258859CA178BAFEC004BA602 /* CardViewController.m in Sources */,
 				258859D2178BBE98004BA602 /* Card.m in Sources */,
 				258859D6178BC426004BA602 /* Deck.m in Sources */,
 				258859D9178BCAD3004BA602 /* NumberCard.m in Sources */,
 				258859DC178BD44A004BA602 /* NumberCardDeck.m in Sources */,
+				256289DD178D22520012ECA4 /* CardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
