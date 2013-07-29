@@ -1,5 +1,5 @@
 //
-//  ViewController.m
+//  CardViewController.m
 //  iOSTutorial
 //
 //  Created by Jianneng on 7/8/13.
