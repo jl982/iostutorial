@@ -10,5 +10,6 @@
 
 @interface SearchViewController : UIViewController<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *searchField;
+@property (weak, nonatomic) IBOutlet UITextView *searchResultView;
 
 @end

@@ -24,23 +24,17 @@
 }
 - (IBAction)search:(id)sender {
     NSLog(@"search field: %@", [self.searchField text]);
-
-}
-
-- (BOOL) textFieldShouldReturn:(UITextField *)textField {
-    [self.searchField resignFirstResponder];
-    return YES;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    [self.searchField setDelegate:self];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setHTTPMethod:@"GET"];
-    [request setURL:[NSURL URLWithString:@"http://localhost:9200/twitter/_search"]];
+    
+    NSString *query = self.searchField.text;
+    if (query.length > 0) {
+        NSString *url = [NSString stringWithFormat:@"http://localhost:9200/twitter/_search?q=%@", self.searchField.text];
+        [request setURL:[NSURL URLWithString:url]];
+    } else {
+        [request setURL:[NSURL URLWithString:@"http://localhost:9200/twitter/_search"]];
+    }
     
     NSError *error = [[NSError alloc] init];
     NSHTTPURLResponse *responseCode = nil;
@@ -56,7 +50,21 @@
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
         [alert show];
+    } else {
+        self.searchResultView.text = returnString;
     }
+}
+
+- (BOOL) textFieldShouldReturn:(UITextField *)textField {
+    [self.searchField resignFirstResponder];
+    return YES;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
+    [self.searchField setDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,6 +75,7 @@
 
 - (void)viewDidUnload {
     [self setSearchField:nil];
+    [self setSearchResultView:nil];
     [super viewDidUnload];
 }
 @end
