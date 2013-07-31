@@ -22,6 +22,9 @@
     }
     return self;
 }
+- (IBAction)search:(id)sender {
+    NSLog(@"search field: %@", [self.searchField text]);
+}
 
 - (void)viewDidLoad
 {
@@ -55,4 +58,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload {
+    [self setSearchField:nil];
+    [super viewDidUnload];
+}
 @end
