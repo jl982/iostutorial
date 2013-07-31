@@ -24,12 +24,19 @@
 }
 - (IBAction)search:(id)sender {
     NSLog(@"search field: %@", [self.searchField text]);
+
+}
+
+- (BOOL) textFieldShouldReturn:(UITextField *)textField {
+    [self.searchField resignFirstResponder];
+    return YES;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [self.searchField setDelegate:self];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setHTTPMethod:@"GET"];
